@@ -1,0 +1,17 @@
+{
+  "name": "data-types-lab",
+  "version": "1.0.0",
+  "description": "(to confirm the data type of an argument)",
+  "main": "library.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "tests/"
+  },
+  "author": "seunkoko",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^3.2.0"
+  }
+}
