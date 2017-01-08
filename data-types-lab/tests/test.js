@@ -1,3 +1,4 @@
+    'use strict';
 
     var dataTypes = require('../library.js').dataTypes;
 
