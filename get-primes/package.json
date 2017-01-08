@@ -1,0 +1,17 @@
+{
+  "name": "get-primes",
+  "version": "1.0.0",
+  "description": "(a function to get prime numbers from 0-n)",
+  "main": "library.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "tests/test.js"
+  },
+  "author": "seunkoko",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^2.5.2"
+  }
+}
