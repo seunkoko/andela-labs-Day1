@@ -1,4 +1,6 @@
 
+    var dataTypes = require('../library.js').dataTypes;
+
     describe("Data types tests ", function() {
         describe("Case for some falsy values", function() {
 
