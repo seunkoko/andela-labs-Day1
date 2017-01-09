@@ -8,7 +8,24 @@
     module.exports = {
 
 		getPrimes: function (num) {
-            
-		}
+			let arrayToReturn = [];
+			if((typeof(num) !== 'number') || (num < 2)) {
+				return 'Invalid input';
+			}	
+			for (let i = 2; i <= num; i++) {
+				if (this.isPrime(i)) {
+					arrayToReturn.push(i);
+				}
+			}
+			return arrayToReturn;
+		},
 
+		isPrime: function (num) {
+			for (let i = 2; i < num; i++) {
+				if (num % i === 0) {
+					return false ;
+				}  
+			}
+			return true;
+		}
 	}
