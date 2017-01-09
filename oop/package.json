@@ -1,0 +1,14 @@
+{
+  "name": "oop",
+  "version": "1.0.0",
+  "description": "(solution to andelabs- car class lab)",
+  "main": "library.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "tests/test.js"
+  },
+  "author": "seunkoko",
+  "license": "ISC"
+}

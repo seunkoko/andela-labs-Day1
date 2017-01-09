@@ -1,0 +1,3 @@
+
+	++ To run the jasmine test
+		- jasmine tests/test.js
