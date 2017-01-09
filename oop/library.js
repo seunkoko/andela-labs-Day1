@@ -5,8 +5,6 @@
 
     "use strict";
 
-    var chalk = require('chalk');
-
     class ToDoList {  
 
         constructor(listTitle) {
@@ -38,10 +36,8 @@
                 itemToAdd = itemToAdd.toString();
                 this.listItems.push(itemToAdd);
                 response = 'Item added';
-                console.log(chalk.blue(response));
             } else {
                 response = 'Item not added';
-                console.red(chalk.blue(response));
             }
             
             return response;
@@ -53,14 +49,11 @@
             // console.log(this);
 
             if (!this.isListEmpty()) {   
-                console.log(chalk.yellow(this.listTitle));
                 for (let i = 0; i < this.listItems.length; i++) {
                     response = (i + 1) + ". " + this.listItems[i]; 
-                    console.log(chalk.blue(response));
                 }
             } else {
                 response = 'No List Items';
-                console.log(chalk.red(response));
             }
             
             return response;
@@ -71,11 +64,9 @@
             let response = this.listItems.length;
 
             if (response > 0) {
-                response = "Length of List: " + response;
-                console.log(chalk.blue(response));
+                response = response + " items";
             } else {
                 response = response + " items";
-                console.log(chalk.red(response));
             }
 
             return response;
@@ -85,11 +76,8 @@
         getListItemByIndex(listIndex) {
             let response = this.listItems[listIndex - 1]
 
-            if (response) {
-                console.log(chalk.blue(response));
-            } else {
+            if (!response) {
                 response = "index does not exist";
-                console.log(chalk.red(response));
             }
 
             return response;
@@ -102,23 +90,21 @@
 
             if (!this.isListEmpty) {
                 response = 'Error, "List not emptied"'
-                console.log(chalk.red(response));
             }
 
-            console.log(chalk.blue(response))
             return response;
         }
 
         // this method deletes the item of the list at a particular index
         deleteListItemAtIndex(listIndex) {
             this.listItems.splice((listIndex - 1), 1);
-            this.getListItems();
+            return "Item deleted";
         }
 
         // this method edits the item of the list at a particular index
         editListItemAtIndex(listIndex, itemToReplaceWith) {
             this.listItems[listIndex - 1] = itemToReplaceWith.toString();
-            this.getListItems();
+            return "Item edited and saved";
         }
 
     }
