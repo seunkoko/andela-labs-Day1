@@ -13,19 +13,20 @@
 				return 'Invalid input';
 			}	
 			for (let i = 2; i <= num; i++) {
-				if (this.isPrime(i)) {
+				if (isPrime(i)) {
 					arrayToReturn.push(i);
 				}
 			}
 			return arrayToReturn;
-		},
-
-		isPrime: function (num) {
-			for (let i = 2; i < num; i++) {
-				if (num % i === 0) {
-					return false ;
-				}  
-			}
-			return true;
 		}
+
+	}
+
+	function isPrime(num) {
+		for (let i = 2; i < num; i++) {
+			if (num % i === 0) {
+				return false ;
+			}  
+		}
+		return true;
 	}
