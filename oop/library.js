@@ -20,7 +20,7 @@ class ToDoList {
 
   // checks if the list it empty
   isListEmpty() {
-   return ((this.listItems.length === 0) ? true : false);
+   return (this.listItems.length === 0);
   }
 
   // adds a new item to the todo list
