@@ -1,11 +1,11 @@
 
-    /*
-    * Get Primes --> gets the prime numbers from 0 to any number used to call the function
-    */
+	/*
+	* Get Primes --> gets the prime numbers from 0 to any number used to call the function
+	*/
 
-    'use strict'
+	'use strict'
   
-    module.exports = {
+	module.exports = {
 
 		getPrimes: function (num) {
 			let arrayToReturn = [];
